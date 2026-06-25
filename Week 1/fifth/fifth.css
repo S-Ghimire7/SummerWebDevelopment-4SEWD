@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Grantha&family=Tirra:wght@400;500;600;700;800;900&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Tirra", cursive;
+}
+.container {
+  width: 500px;
+  margin: auto;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+.section {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+input,
+select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+button {
+  margin: 5px;
+}
+footer {
+  margin-top: 10px;
+}

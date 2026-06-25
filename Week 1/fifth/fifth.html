@@ -3,49 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="fifth.css" />
   </head>
   <body>
-    <h1>User Registration</h1>
-    <div style="border: 1px solid">
-      <form action="">
-        <label for="">Personal Details</label>
-        <br />
-        <label for="">First Name: </label> <input type="text" />
-        <br />
-        <label for="">Last Name: </label> <input type="text" />
-        <br />
-        <label for="">Age: </label> <input type="number" />
-        <br />
-        <label for="">Gender: </label
-        ><select name="" id="">
-          <option value="0">Choose...</option>
-          <option value="1">Male</option>
-          <option value="2">Female</option>
-        </select>
-        <br />
-        <label for="">Profile Picture</label>
-        <button><input type="image" /></button>
+    <div class="container">
+      <h1>User Registration</h1>
+
+      <form>
+        <div class="section">
+          <h3>Personal Details</h3>
+
+          <label>First Name</label>
+          <input type="text" required />
+
+          <label>Last Name</label>
+          <input type="text" required />
+
+          <label>Age</label>
+          <input type="number" required />
+
+          <label>Gender</label>
+          <select required>
+            <option value="">Choose...</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+
+          <label for="profilePic" class="upload-btn">
+            Choose Profile Picture
+          </label>
+          <input type="file" id="profilePic" accept="image/*" hidden />
+        </div>
+
+        <div class="section">
+          <h3>Account Details</h3>
+
+          <label>Email</label>
+          <input type="email" required />
+
+          <label>Password</label>
+          <input type="password" required />
+
+          <div class="radio-group">
+            <label>Role:</label>
+
+            <input type="radio" name="role" id="admin" required />
+            <label for="admin">Admin</label>
+
+            <input type="radio" name="role" id="user" />
+            <label for="user">User</label>
+          </div>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="terms" required />
+          <label for="terms"> I agree to the terms and conditions </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Register</button>
+        <button type="reset" class="reset-btn">Reset</button>
       </form>
     </div>
-    <br />
-    <div style="border: 1px solid">
-      <form action="">
-        <label for="">Account Details</label>
-        <br />
-        <label for="">Email: </label><input type="email" />
-        <br />
-        <label for="">Password: </label><input type="password" />
-        <br />
-        <label for="">Role:</label> <input type="radio" value="Admin" /> Admin
-        <input type="radio" value="User" /> User
-      </form>
-    </div>
-    <br />
-    <div><input type="checkbox" /> I agree to the terms and conditions</div>
-    <br />
-    <button type="submit">Register</button> <button type="reset">Reset</button>
-    <br /><br />
+
     <footer>&copy; 2026 Shlok Ghimire</footer>
   </body>
 </html>
