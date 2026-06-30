@@ -1,0 +1,19 @@
+:root {
+  --font-color: #891c49;
+  --main-background-color: #aeafae;
+  --secondary-background-color: #b3dbf5;
+  --secondary-font-color: #0ebd5f;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.box {
+  background-color: var(--main-background-color);
+  margin: 50px;
+  padding: 100px;
+}

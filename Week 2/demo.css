@@ -1,0 +1,45 @@
+:root {
+  --font-color: #891c49;
+  --main-background-color: #aeafae;
+  --secondary-background-color: #b3dbf5;
+  --secondary-font-color: #0ebd5f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: var(--secondary-background-color);
+}
+
+span {
+  font-size: 2em;
+  background-color: var(--secondary-font-color);
+  color: var(--secondary-background-color);
+}
+
+.parent {
+  font-size: 2em;
+  color: var(--font-color);
+  background-color: var(--secondary-background-color);
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-background-color);
+}
+
+.head {
+  text-align: center;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 10cm;
+  height: 10cm;
+}
